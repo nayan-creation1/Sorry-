@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&family=Hind+Siliguri:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-cursive: "Dancing Script", cursive;
+  --font-bengali: "Hind Siliguri", sans-serif;
+
+  --color-pastel-pink: #fdf2f8;
+  --color-pastel-purple: #f5f3ff;
+  --color-pastel-blue: #f0f9ff;
+}
+
+body {
+  @apply bg-pastel-pink text-gray-800 font-sans overflow-x-hidden;
+}
+
+.bengali-text {
+  @apply font-bengali;
+}
+
+.romantic-text {
+  @apply font-cursive;
+}
+
